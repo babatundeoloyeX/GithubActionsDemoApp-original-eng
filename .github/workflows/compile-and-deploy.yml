@@ -19,6 +19,9 @@ jobs:
           dotnet-version: ${{env.DOTNET_VERSION}}
 
       - name: Getting the dependencies
+        run: dotnet restore
+
+      - name: Build the project
         run: dotnet build --no-restore
       
   
