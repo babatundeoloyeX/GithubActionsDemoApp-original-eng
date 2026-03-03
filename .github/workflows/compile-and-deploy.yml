@@ -32,6 +32,6 @@ jobs:
         run: dotnet build --no-restore
 
       - name: Run tests
-        run: dotnest test --no-build
+        run: dotnet test --no-build
       
   
